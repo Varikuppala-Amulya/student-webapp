@@ -14,7 +14,18 @@
     <name>Student WebApp</name>
 
     <build>
-        <finalName>student-webapp</finalName>
-    </build>
+    <finalName>student-webapp</finalName>
+    
+    <plugins>
+        <plugin>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.5.1</version>
+            <configuration>
+                <failOnMissingWebXml>false</failOnMissingWebXml>
+            </configuration>
+        </plugin>
+    </plugins>
+
+</build>
 
 </project>
